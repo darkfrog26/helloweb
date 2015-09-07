@@ -1,5 +1,7 @@
 package matt
 
+import java.io.File
+
 /**
  * @author Matt Hicks <matt@outr.com>
  */
@@ -34,6 +36,8 @@ trait BodyChild extends HTMLTag
 class H1 extends BodyChild {
   val content = new Prop[String]
 }
+
+class Ul extends BodyChild
 
 class Prop[T] {
   private var value: T = _
